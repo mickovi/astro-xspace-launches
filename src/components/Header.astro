@@ -1,0 +1,67 @@
+---
+import HeaderButton from "./HeaderButton.astro";
+---
+
+<header class="py-8 px-4 mx-auto max-w-xl lg:py-16 lg:px-6">
+  <div class="mx-auto text-center mb-8 lg:mb-16">
+    <h2 class="mb-4 text-5xl tracking-tight font-extrabold text-white">
+      SpaceX Launches
+    </h2>
+    <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">
+      All the information about SpaceX launches
+    </p>
+  </div>
+  <nav
+    class="flex flex-col items-center justify-between w-full text-center md:flex-row"
+    >
+    <HeaderButton href="/about" class="text-white">
+      <svg
+        slot="before"
+        width="48"
+        height="48"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="icon icon-tabler icons-tabler-outline icon-tabler-info-circle"
+        ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+          d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path><path d="M12 9h.01"
+        ></path><path d="M11 12h1v4h1"></path></svg
+      >About the projects</HeaderButton
+    >
+    <HeaderButton href="/" class="text-white">
+      <svg
+        slot="before"
+        width="48"
+        height="48"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="icon icon-tabler icons-tabler-outline icon-tabler-rocket"
+        ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+          d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3"
+        ></path><path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3"></path><path
+          d="M15 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path></svg
+      >
+      Lastest launches</HeaderButton
+    >    
+    <HeaderButton href="/oldest" class="text-white">
+      <svg
+        slot="before"
+        width="48"
+        height="48"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        class="icon icon-tabler icons-tabler-filled icon-tabler-jetpack"
+        ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+          d="M17 2a4 4 0 0 1 4 4v7a1 1 0 0 1 -1 1h-6a1 1 0 0 1 -1 -1v-1h-2v1a1 1 0 0 1 -1 1h-6a1 1 0 0 1 -1 -1v-7a4 4 0 0 1 8 0v1h2v-1a4 4 0 0 1 4 -4m-4 8v-1h-2v1zm-4 5a1 1 0 0 1 1 1c0 2.623 -.787 4.59 -2.4 5.8a1 1 0 0 1 -1.2 0c-1.613 -1.21 -2.4 -3.177 -2.4 -5.8a1 1 0 0 1 2 0c0 1.532 .308 2.684 .906 3.498l.094 .119l.094 -.12c.558 -.759 .864 -1.813 .902 -3.196l.004 -.301a1 1 0 0 1 1 -1m10 0a1 1 0 0 1 1 1c0 2.623 -.787 4.59 -2.4 5.8a1 1 0 0 1 -1.2 0c-1.613 -1.21 -2.4 -3.177 -2.4 -5.8a1 1 0 0 1 2 0c0 1.532 .308 2.684 .906 3.498l.094 .119l.094 -.12c.558 -.759 .864 -1.813 .902 -3.196l.004 -.301a1 1 0 0 1 1 -1"
+        ></path></svg
+      >Oldest launches</HeaderButton
+    >
+  </nav>
+</header>
